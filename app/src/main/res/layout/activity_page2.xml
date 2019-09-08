@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <TextView
+        android:id="@+id/donation_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@android:color/background_dark"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dollar_sign"
+        app:layout_constraintEnd_toStartOf="@+id/button_delete"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dollar_sign"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dollar_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="272dp"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@android:color/background_dark"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/donation_amount"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donation_amount_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/button_9"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_0"
+        app:layout_constraintEnd_toEndOf="@+id/button_0"
+        app:srcCompat="@drawable/button_9" />
+
+    <ImageButton
+        android:id="@+id/button_8"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintEnd_toStartOf="@+id/button_9"
+        app:srcCompat="@drawable/button_8" />
+
+    <ImageButton
+        android:id="@+id/button_7"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintEnd_toStartOf="@+id/button_8"
+        app:srcCompat="@drawable/button_7" />
+
+    <ImageButton
+        android:id="@+id/button_5"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_8"
+        app:layout_constraintEnd_toStartOf="@+id/button_6"
+        app:srcCompat="@drawable/button_5" />
+
+    <ImageView
+        android:id="@+id/navbar"
+        android:layout_width="1280dp"
+        android:layout_height="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navbar" />
+
+    <ImageButton
+        android:id="@+id/button_cancel"
+        android:layout_width="218dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/navbar"
+        app:layout_constraintStart_toStartOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/button_cancel" />
+
+    <ImageButton
+        android:id="@+id/button_0"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_continue"
+        app:layout_constraintEnd_toEndOf="@+id/button_continue"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_delete"
+        app:srcCompat="@drawable/button_0" />
+
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="329dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_continue"
+        app:layout_constraintStart_toStartOf="@+id/button_continue"
+        app:srcCompat="@drawable/button_delete" />
+
+    <ImageButton
+        android:id="@+id/button_continue"
+        android:layout_width="502dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="60dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_continue" />
+
+    <ImageButton
+        android:id="@+id/button_6"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_9"
+        app:layout_constraintEnd_toEndOf="@+id/button_9"
+        app:srcCompat="@drawable/button_6" />
+
+    <ImageButton
+        android:id="@+id/button_4"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_7"
+        app:layout_constraintEnd_toStartOf="@+id/button_5"
+        app:srcCompat="@drawable/button_4" />
+
+    <ImageButton
+        android:id="@+id/button_3"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_6"
+        app:layout_constraintEnd_toEndOf="@+id/button_6"
+        app:srcCompat="@drawable/button_3" />
+
+    <ImageButton
+        android:id="@+id/button_2"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_5"
+        app:layout_constraintEnd_toStartOf="@+id/button_3"
+        app:srcCompat="@drawable/button_2" />
+
+    <ImageButton
+        android:id="@+id/button_1"
+        android:layout_width="156dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/button_4"
+        app:layout_constraintEnd_toStartOf="@+id/button_2"
+        app:srcCompat="@drawable/button_1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="591dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="72dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/button_1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navbar"
+        app:srcCompat="@drawable/enter_donation_amount" />
+</androidx.constraintlayout.widget.ConstraintLayout>
